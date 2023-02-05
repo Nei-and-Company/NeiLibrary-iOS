@@ -1,0 +1,4348 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BoardingEvaluator",
+        "printedName": "BoardingEvaluator",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setSettings",
+            "printedName": "setSettings(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Settings",
+                "printedName": "Nei.BoardingEvaluator.Settings",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei17BoardingEvaluatorC11setSettingsyyAC0E0VF",
+            "mangledName": "$s3Nei17BoardingEvaluatorC11setSettingsyyAC0E0VF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Settings",
+            "printedName": "Settings",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "locationWindowSize",
+                "printedName": "locationWindowSize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV18locationWindowSizeSdvp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV18locationWindowSizeSdvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV18locationWindowSizeSdvg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV18locationWindowSizeSdvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "speedThreshold",
+                "printedName": "speedThreshold",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV14speedThresholdSdvp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV14speedThresholdSdvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV14speedThresholdSdvg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV14speedThresholdSdvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "speedLocationInterval",
+                "printedName": "speedLocationInterval",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV21speedLocationIntervalSdvp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV21speedLocationIntervalSdvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV21speedLocationIntervalSdvg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV21speedLocationIntervalSdvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "minimumSpeedSatisfyCount",
+                "printedName": "minimumSpeedSatisfyCount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV24minimumSpeedSatisfyCountSivp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV24minimumSpeedSatisfyCountSivp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV24minimumSpeedSatisfyCountSivg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV24minimumSpeedSatisfyCountSivg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "distanceThreshold",
+                "printedName": "distanceThreshold",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV17distanceThresholdSdvp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV17distanceThresholdSdvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV17distanceThresholdSdvg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV17distanceThresholdSdvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "nearStationThreshold",
+                "printedName": "nearStationThreshold",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV20nearStationThresholdSivp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV20nearStationThresholdSivp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV20nearStationThresholdSivg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV20nearStationThresholdSivg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "nearStationLocationInterval",
+                "printedName": "nearStationLocationInterval",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV27nearStationLocationIntervalSdvp",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV27nearStationLocationIntervalSdvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV27nearStationLocationIntervalSdvg",
+                    "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV27nearStationLocationIntervalSdvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(locationWindowSize:speedThreshold:speedLocationInterval:minimumSpeedSatisfyCount:distanceThreshold:nearStationThreshold:nearStationLocationInterval:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Settings",
+                    "printedName": "Nei.BoardingEvaluator.Settings",
+                    "usr": "s:3Nei17BoardingEvaluatorC8SettingsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "hasDefaultArg": true,
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "hasDefaultArg": true,
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei17BoardingEvaluatorC8SettingsV18locationWindowSize14speedThreshold0H16LocationInterval24minimumSpeedSatisfyCount08distanceI0011nearStationI00qrjK0AESd_S2dSiSdSiSdtcfc",
+                "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV18locationWindowSize14speedThreshold0H16LocationInterval24minimumSpeedSatisfyCount08distanceI0011nearStationI00qrjK0AESd_S2dSiSdSiSdtcfc",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:3Nei17BoardingEvaluatorC8SettingsV",
+            "mangledName": "$s3Nei17BoardingEvaluatorC8SettingsV",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3Nei17BoardingEvaluatorC",
+        "mangledName": "$s3Nei17BoardingEvaluatorC",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BoardingCondition",
+        "printedName": "BoardingCondition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "motion",
+            "printedName": "motion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.BoardingCondition.Type) -> Nei.BoardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoardingCondition",
+                    "printedName": "Nei.BoardingCondition",
+                    "usr": "s:3Nei17BoardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.BoardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoardingCondition",
+                        "printedName": "Nei.BoardingCondition",
+                        "usr": "s:3Nei17BoardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei17BoardingConditionO6motionyA2CmF",
+            "mangledName": "$s3Nei17BoardingConditionO6motionyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Var",
+            "name": "speed",
+            "printedName": "speed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.BoardingCondition.Type) -> Nei.BoardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoardingCondition",
+                    "printedName": "Nei.BoardingCondition",
+                    "usr": "s:3Nei17BoardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.BoardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoardingCondition",
+                        "printedName": "Nei.BoardingCondition",
+                        "usr": "s:3Nei17BoardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei17BoardingConditionO5speedyA2CmF",
+            "mangledName": "$s3Nei17BoardingConditionO5speedyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Var",
+            "name": "distance",
+            "printedName": "distance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.BoardingCondition.Type) -> Nei.BoardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoardingCondition",
+                    "printedName": "Nei.BoardingCondition",
+                    "usr": "s:3Nei17BoardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.BoardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoardingCondition",
+                        "printedName": "Nei.BoardingCondition",
+                        "usr": "s:3Nei17BoardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei17BoardingConditionO8distanceyA2CmF",
+            "mangledName": "$s3Nei17BoardingConditionO8distanceyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Nei.BoardingCondition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoardingCondition",
+                    "printedName": "Nei.BoardingCondition",
+                    "usr": "s:3Nei17BoardingConditionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3Nei17BoardingConditionO8rawValueACSgSS_tcfc",
+            "mangledName": "$s3Nei17BoardingConditionO8rawValueACSgSS_tcfc",
+            "moduleName": "Nei",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei17BoardingConditionO8rawValueSSvp",
+            "mangledName": "$s3Nei17BoardingConditionO8rawValueSSvp",
+            "moduleName": "Nei",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei17BoardingConditionO8rawValueSSvg",
+                "mangledName": "$s3Nei17BoardingConditionO8rawValueSSvg",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3Nei17BoardingConditionO",
+        "mangledName": "$s3Nei17BoardingConditionO",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TransportationManager",
+        "printedName": "TransportationManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransportationManager",
+                "printedName": "Nei.TransportationManager",
+                "usr": "s:3Nei21TransportationManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei21TransportationManagerC6sharedACvpZ",
+            "mangledName": "$s3Nei21TransportationManagerC6sharedACvpZ",
+            "moduleName": "Nei",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransportationManager",
+                    "printedName": "Nei.TransportationManager",
+                    "usr": "s:3Nei21TransportationManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC6sharedACvgZ",
+                "mangledName": "$s3Nei21TransportationManagerC6sharedACvgZ",
+                "moduleName": "Nei",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locationManager",
+            "printedName": "locationManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocationManager",
+                "printedName": "Nei.LocationManager",
+                "usr": "c:@M@Nei@objc(cs)LocationManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei21TransportationManagerC08locationC0AA08LocationC0Cvp",
+            "mangledName": "$s3Nei21TransportationManagerC08locationC0AA08LocationC0Cvp",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationManager",
+                    "printedName": "Nei.LocationManager",
+                    "usr": "c:@M@Nei@objc(cs)LocationManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC08locationC0AA08LocationC0Cvg",
+                "mangledName": "$s3Nei21TransportationManagerC08locationC0AA08LocationC0Cvg",
+                "moduleName": "Nei",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "motionManager",
+            "printedName": "motionManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MotionManager",
+                "printedName": "Nei.MotionManager",
+                "usr": "s:3Nei13MotionManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei21TransportationManagerC06motionC0AA06MotionC0Cvp",
+            "mangledName": "$s3Nei21TransportationManagerC06motionC0AA06MotionC0Cvp",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MotionManager",
+                    "printedName": "Nei.MotionManager",
+                    "usr": "s:3Nei13MotionManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC06motionC0AA06MotionC0Cvg",
+                "mangledName": "$s3Nei21TransportationManagerC06motionC0AA06MotionC0Cvg",
+                "moduleName": "Nei",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "busStationProvider",
+            "printedName": "busStationProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BusStationProvider",
+                "printedName": "Nei.BusStationProvider",
+                "usr": "s:3Nei18BusStationProviderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei21TransportationManagerC18busStationProviderAA03BuseF0Cvp",
+            "mangledName": "$s3Nei21TransportationManagerC18busStationProviderAA03BuseF0Cvp",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BusStationProvider",
+                    "printedName": "Nei.BusStationProvider",
+                    "usr": "s:3Nei18BusStationProviderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC18busStationProviderAA03BuseF0Cvg",
+                "mangledName": "$s3Nei21TransportationManagerC18busStationProviderAA03BuseF0Cvg",
+                "moduleName": "Nei",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boardingEvaluator",
+            "printedName": "boardingEvaluator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BoardingEvaluator",
+                "printedName": "Nei.BoardingEvaluator",
+                "usr": "s:3Nei17BoardingEvaluatorC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0Cvp",
+            "mangledName": "$s3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0Cvp",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoardingEvaluator",
+                    "printedName": "Nei.BoardingEvaluator",
+                    "usr": "s:3Nei17BoardingEvaluatorC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0Cvg",
+                "mangledName": "$s3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0Cvg",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoardingEvaluator",
+                    "printedName": "Nei.BoardingEvaluator",
+                    "usr": "s:3Nei17BoardingEvaluatorC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0Cvs",
+                "mangledName": "$s3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0Cvs",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0CvM",
+                "mangledName": "$s3Nei21TransportationManagerC17boardingEvaluatorAA08BoardingE0CvM",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setSettings",
+            "printedName": "setSettings(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Settings",
+                "printedName": "Nei.TransportationManager.Settings",
+                "usr": "s:3Nei21TransportationManagerC8SettingsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei21TransportationManagerC11setSettingsyyAC0E0VF",
+            "mangledName": "$s3Nei21TransportationManagerC11setSettingsyyAC0E0VF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enter",
+            "printedName": "enter()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei21TransportationManagerC5enterSbyF",
+            "mangledName": "$s3Nei21TransportationManagerC5enterSbyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "exit",
+            "printedName": "exit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei21TransportationManagerC4exitSbyF",
+            "mangledName": "$s3Nei21TransportationManagerC4exitSbyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei21TransportationManagerC6cancelSbyF",
+            "mangledName": "$s3Nei21TransportationManagerC6cancelSbyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeState",
+            "printedName": "observeState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Nei.TransportationManager.StateData, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StateData",
+                    "printedName": "Nei.TransportationManager.StateData",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei21TransportationManagerC12observeState7Combine12AnyPublisherVyAC0E4DataVs5NeverOGyF",
+            "mangledName": "$s3Nei21TransportationManagerC12observeState7Combine12AnyPublisherVyAC0E4DataVs5NeverOGyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStateData",
+            "printedName": "getStateData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StateData",
+                "printedName": "Nei.TransportationManager.StateData",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei21TransportationManagerC12getStateDataAC0eF0VyF",
+            "mangledName": "$s3Nei21TransportationManagerC12getStateDataAC0eF0VyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "StateData",
+            "printedName": "StateData",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "state",
+                "printedName": "state",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Nei.TransportationManager.State",
+                    "usr": "s:3Nei21TransportationManagerC5StateO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV5stateAC0D0Ovp",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV5stateAC0D0Ovp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV5stateAC0D0Ovg",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV5stateAC0D0Ovg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV5stateAC0D0Ovs",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV5stateAC0D0Ovs",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV5stateAC0D0OvM",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV5stateAC0D0OvM",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "enterTrigger",
+                "printedName": "enterTrigger",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Nei.TransportationManager.EnterTrigger?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EnterTrigger",
+                        "printedName": "Nei.TransportationManager.EnterTrigger",
+                        "usr": "s:3Nei21TransportationManagerC12EnterTriggerO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvp",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Nei.TransportationManager.EnterTrigger?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "EnterTrigger",
+                            "printedName": "Nei.TransportationManager.EnterTrigger",
+                            "usr": "s:3Nei21TransportationManagerC12EnterTriggerO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvg",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Nei.TransportationManager.EnterTrigger?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "EnterTrigger",
+                            "printedName": "Nei.TransportationManager.EnterTrigger",
+                            "usr": "s:3Nei21TransportationManagerC12EnterTriggerO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvs",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvs",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvM",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV12enterTriggerAC05EnterG0OSgvM",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "boardingCondition",
+                "printedName": "boardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Nei.BoardingCondition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoardingCondition",
+                        "printedName": "Nei.BoardingCondition",
+                        "usr": "s:3Nei17BoardingConditionO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvp",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Nei.BoardingCondition?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BoardingCondition",
+                            "printedName": "Nei.BoardingCondition",
+                            "usr": "s:3Nei17BoardingConditionO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvg",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Nei.BoardingCondition?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BoardingCondition",
+                            "printedName": "Nei.BoardingCondition",
+                            "usr": "s:3Nei17BoardingConditionO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvs",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvs",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvM",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV17boardingConditionAA08BoardingG0OSgvM",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unboardingCondition",
+                "printedName": "unboardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Nei.UnboardingCondition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnboardingCondition",
+                        "printedName": "Nei.UnboardingCondition",
+                        "usr": "s:3Nei19UnboardingConditionO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvp",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Nei.UnboardingCondition?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnboardingCondition",
+                            "printedName": "Nei.UnboardingCondition",
+                            "usr": "s:3Nei19UnboardingConditionO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvg",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Nei.UnboardingCondition?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnboardingCondition",
+                            "printedName": "Nei.UnboardingCondition",
+                            "usr": "s:3Nei19UnboardingConditionO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvs",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvs",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvM",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV19unboardingConditionAA010UnboardingG0OSgvM",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tokens",
+                "printedName": "tokens",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV6tokensSivp",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV6tokensSivp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV6tokensSivg",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV6tokensSivg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV6tokensSivs",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV6tokensSivs",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV6tokensSivM",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV6tokensSivM",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StateData",
+                    "printedName": "Nei.TransportationManager.StateData",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StateData",
+                    "printedName": "Nei.TransportationManager.StateData",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV2eeoiySbAE_AEtFZ",
+                "moduleName": "Nei",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC9StateDataV11descriptionSSvp",
+                "mangledName": "$s3Nei21TransportationManagerC9StateDataV11descriptionSSvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC9StateDataV11descriptionSSvg",
+                    "mangledName": "$s3Nei21TransportationManagerC9StateDataV11descriptionSSvg",
+                    "moduleName": "Nei",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:3Nei21TransportationManagerC9StateDataV",
+            "mangledName": "$s3Nei21TransportationManagerC9StateDataV",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "idle",
+                "printedName": "idle",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO4idleyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO4idleyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "checking",
+                "printedName": "checking",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO8checkingyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO8checkingyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "beginning",
+                "printedName": "beginning",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO9beginningyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO9beginningyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "boarding",
+                "printedName": "boarding",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO8boardingyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO8boardingyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "unboarded",
+                "printedName": "unboarded",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO9unboardedyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO9unboardedyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "failed",
+                "printedName": "failed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO6failedyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO6failedyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "canceled",
+                "printedName": "canceled",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO8canceledyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO8canceledyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "checkingTimeout",
+                "printedName": "checkingTimeout",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO15checkingTimeoutyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO15checkingTimeoutyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "boardingTimeout",
+                "printedName": "boardingTimeout",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.State.Type) -> Nei.TransportationManager.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "Nei.TransportationManager.State",
+                            "usr": "s:3Nei21TransportationManagerC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC5StateO15boardingTimeoutyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO15boardingTimeoutyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "boarding",
+                "printedName": "boarding",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC5StateO8boardingSbvp",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO8boardingSbvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC5StateO8boardingSbvg",
+                    "mangledName": "$s3Nei21TransportationManagerC5StateO8boardingSbvg",
+                    "moduleName": "Nei",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Nei.TransportationManager.State?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "Nei.TransportationManager.State",
+                        "usr": "s:3Nei21TransportationManagerC5StateO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei21TransportationManagerC5StateO8rawValueAESgSS_tcfc",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO8rawValueAESgSS_tcfc",
+                "moduleName": "Nei",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC5StateO8rawValueSSvp",
+                "mangledName": "$s3Nei21TransportationManagerC5StateO8rawValueSSvp",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC5StateO8rawValueSSvg",
+                    "mangledName": "$s3Nei21TransportationManagerC5StateO8rawValueSSvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:3Nei21TransportationManagerC5StateO",
+            "mangledName": "$s3Nei21TransportationManagerC5StateO",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "EnterTrigger",
+            "printedName": "EnterTrigger",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "manual",
+                "printedName": "manual",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.TransportationManager.EnterTrigger.Type) -> Nei.TransportationManager.EnterTrigger",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EnterTrigger",
+                        "printedName": "Nei.TransportationManager.EnterTrigger",
+                        "usr": "s:3Nei21TransportationManagerC12EnterTriggerO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.TransportationManager.EnterTrigger.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "EnterTrigger",
+                            "printedName": "Nei.TransportationManager.EnterTrigger",
+                            "usr": "s:3Nei21TransportationManagerC12EnterTriggerO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei21TransportationManagerC12EnterTriggerO6manualyA2EmF",
+                "mangledName": "$s3Nei21TransportationManagerC12EnterTriggerO6manualyA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Nei.TransportationManager.EnterTrigger?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EnterTrigger",
+                        "printedName": "Nei.TransportationManager.EnterTrigger",
+                        "usr": "s:3Nei21TransportationManagerC12EnterTriggerO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei21TransportationManagerC12EnterTriggerO8rawValueAESgSS_tcfc",
+                "mangledName": "$s3Nei21TransportationManagerC12EnterTriggerO8rawValueAESgSS_tcfc",
+                "moduleName": "Nei",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC12EnterTriggerO8rawValueSSvp",
+                "mangledName": "$s3Nei21TransportationManagerC12EnterTriggerO8rawValueSSvp",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC12EnterTriggerO8rawValueSSvg",
+                    "mangledName": "$s3Nei21TransportationManagerC12EnterTriggerO8rawValueSSvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:3Nei21TransportationManagerC12EnterTriggerO",
+            "mangledName": "$s3Nei21TransportationManagerC12EnterTriggerO",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Settings",
+            "printedName": "Settings",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "enableUnboardingCondition",
+                "printedName": "enableUnboardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC8SettingsV25enableUnboardingConditionSbvp",
+                "mangledName": "$s3Nei21TransportationManagerC8SettingsV25enableUnboardingConditionSbvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC8SettingsV25enableUnboardingConditionSbvg",
+                    "mangledName": "$s3Nei21TransportationManagerC8SettingsV25enableUnboardingConditionSbvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "checkingTimeout",
+                "printedName": "checkingTimeout",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC8SettingsV15checkingTimeoutSdSgvp",
+                "mangledName": "$s3Nei21TransportationManagerC8SettingsV15checkingTimeoutSdSgvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC8SettingsV15checkingTimeoutSdSgvg",
+                    "mangledName": "$s3Nei21TransportationManagerC8SettingsV15checkingTimeoutSdSgvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "boardingTimeout",
+                "printedName": "boardingTimeout",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei21TransportationManagerC8SettingsV15boardingTimeoutSdSgvp",
+                "mangledName": "$s3Nei21TransportationManagerC8SettingsV15boardingTimeoutSdSgvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei21TransportationManagerC8SettingsV15boardingTimeoutSdSgvg",
+                    "mangledName": "$s3Nei21TransportationManagerC8SettingsV15boardingTimeoutSdSgvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(enableUnboardingCondition:checkingTimeout:boardingTimeout:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Settings",
+                    "printedName": "Nei.TransportationManager.Settings",
+                    "usr": "s:3Nei21TransportationManagerC8SettingsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei21TransportationManagerC8SettingsV25enableUnboardingCondition15checkingTimeout08boardingI0AESb_SdSgAItcfc",
+                "mangledName": "$s3Nei21TransportationManagerC8SettingsV25enableUnboardingCondition15checkingTimeout08boardingI0AESb_SdSgAItcfc",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:3Nei21TransportationManagerC8SettingsV",
+            "mangledName": "$s3Nei21TransportationManagerC8SettingsV",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3Nei21TransportationManagerC",
+        "mangledName": "$s3Nei21TransportationManagerC",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MotionManager",
+        "printedName": "MotionManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "observeMotion",
+            "printedName": "observeMotion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<CoreMotion.CMMotionActivity, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMMotionActivity",
+                    "printedName": "CoreMotion.CMMotionActivity",
+                    "usr": "c:objc(cs)CMMotionActivity"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei13MotionManagerC07observeB07Combine12AnyPublisherVySo16CMMotionActivityCs5NeverOGyF",
+            "mangledName": "$s3Nei13MotionManagerC07observeB07Combine12AnyPublisherVySo16CMMotionActivityCs5NeverOGyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMotion",
+            "printedName": "getMotion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMotion.CMMotionActivity?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMMotionActivity",
+                    "printedName": "CoreMotion.CMMotionActivity",
+                    "usr": "c:objc(cs)CMMotionActivity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei13MotionManagerC03getB0So16CMMotionActivityCSgyF",
+            "mangledName": "$s3Nei13MotionManagerC03getB0So16CMMotionActivityCSgyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3Nei13MotionManagerC",
+        "mangledName": "$s3Nei13MotionManagerC",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocationManager",
+        "printedName": "LocationManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "observeLocation",
+            "printedName": "observeLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<CoreLocation.CLLocation, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei15LocationManagerC07observeB07Combine12AnyPublisherVySo10CLLocationCs5NeverOGyF",
+            "mangledName": "$s3Nei15LocationManagerC07observeB07Combine12AnyPublisherVySo10CLLocationCs5NeverOGyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLocation",
+            "printedName": "getLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreLocation.CLLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei15LocationManagerC03getB0So10CLLocationCSgyF",
+            "mangledName": "$s3Nei15LocationManagerC03getB0So10CLLocationCSgyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didFailWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Nei@objc(cs)LocationManager(im)locationManager:didFailWithError:",
+            "mangledName": "$s3Nei15LocationManagerC08locationC0_16didFailWithErrorySo010CLLocationC0C_s0H0_ptF",
+            "moduleName": "Nei",
+            "objc_name": "locationManager:didFailWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didUpdateLocations:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreLocation.CLLocation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Nei@objc(cs)LocationManager(im)locationManager:didUpdateLocations:",
+            "mangledName": "$s3Nei15LocationManagerC08locationC0_18didUpdateLocationsySo010CLLocationC0C_SaySo0H0CGtF",
+            "moduleName": "Nei",
+            "objc_name": "locationManager:didUpdateLocations:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Nei@objc(cs)LocationManager",
+        "mangledName": "$s3Nei15LocationManagerC",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnboardingCondition",
+        "printedName": "UnboardingCondition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "manual",
+            "printedName": "manual",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.UnboardingCondition.Type) -> Nei.UnboardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnboardingCondition",
+                    "printedName": "Nei.UnboardingCondition",
+                    "usr": "s:3Nei19UnboardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.UnboardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnboardingCondition",
+                        "printedName": "Nei.UnboardingCondition",
+                        "usr": "s:3Nei19UnboardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei19UnboardingConditionO6manualyA2CmF",
+            "mangledName": "$s3Nei19UnboardingConditionO6manualyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Var",
+            "name": "walking",
+            "printedName": "walking",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.UnboardingCondition.Type) -> Nei.UnboardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnboardingCondition",
+                    "printedName": "Nei.UnboardingCondition",
+                    "usr": "s:3Nei19UnboardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.UnboardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnboardingCondition",
+                        "printedName": "Nei.UnboardingCondition",
+                        "usr": "s:3Nei19UnboardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei19UnboardingConditionO7walkingyA2CmF",
+            "mangledName": "$s3Nei19UnboardingConditionO7walkingyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Var",
+            "name": "stationary",
+            "printedName": "stationary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.UnboardingCondition.Type) -> Nei.UnboardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnboardingCondition",
+                    "printedName": "Nei.UnboardingCondition",
+                    "usr": "s:3Nei19UnboardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.UnboardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnboardingCondition",
+                        "printedName": "Nei.UnboardingCondition",
+                        "usr": "s:3Nei19UnboardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei19UnboardingConditionO10stationaryyA2CmF",
+            "mangledName": "$s3Nei19UnboardingConditionO10stationaryyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Var",
+            "name": "lackOfLocation",
+            "printedName": "lackOfLocation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Nei.UnboardingCondition.Type) -> Nei.UnboardingCondition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnboardingCondition",
+                    "printedName": "Nei.UnboardingCondition",
+                    "usr": "s:3Nei19UnboardingConditionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Nei.UnboardingCondition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnboardingCondition",
+                        "printedName": "Nei.UnboardingCondition",
+                        "usr": "s:3Nei19UnboardingConditionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3Nei19UnboardingConditionO14lackOfLocationyA2CmF",
+            "mangledName": "$s3Nei19UnboardingConditionO14lackOfLocationyA2CmF",
+            "moduleName": "Nei"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnboardingCondition",
+                "printedName": "Nei.UnboardingCondition",
+                "usr": "s:3Nei19UnboardingConditionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnboardingCondition",
+                "printedName": "Nei.UnboardingCondition",
+                "usr": "s:3Nei19UnboardingConditionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei19UnboardingConditionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s3Nei19UnboardingConditionO2eeoiySbAC_ACtFZ",
+            "moduleName": "Nei",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3Nei19UnboardingConditionO9hashValueSivp",
+            "mangledName": "$s3Nei19UnboardingConditionO9hashValueSivp",
+            "moduleName": "Nei",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3Nei19UnboardingConditionO9hashValueSivg",
+                "mangledName": "$s3Nei19UnboardingConditionO9hashValueSivg",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei19UnboardingConditionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s3Nei19UnboardingConditionO4hash4intoys6HasherVz_tF",
+            "moduleName": "Nei",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3Nei19UnboardingConditionO",
+        "mangledName": "$s3Nei19UnboardingConditionO",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "SQLite3",
+        "printedName": "SQLite3",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BusStationProvider",
+        "printedName": "BusStationProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "findNearStations",
+            "printedName": "findNearStations(location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Nei.BusStationProvider.Data]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Nei.BusStationProvider.Data]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Nei.BusStationProvider.Data",
+                        "usr": "s:3Nei18BusStationProviderC4DataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocation",
+                "printedName": "CoreLocation.CLLocation",
+                "usr": "c:objc(cs)CLLocation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei18BusStationProviderC16findNearStations8locationSayAC4DataVGSgSo10CLLocationC_tF",
+            "mangledName": "$s3Nei18BusStationProviderC16findNearStations8locationSayAC4DataVGSgSo10CLLocationC_tF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeStations",
+            "printedName": "observeStations()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[Nei.BusStationProvider.Data], Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Nei.BusStationProvider.Data]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Nei.BusStationProvider.Data",
+                        "usr": "s:3Nei18BusStationProviderC4DataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei18BusStationProviderC15observeStations7Combine12AnyPublisherVySayAC4DataVGs5NeverOGyF",
+            "mangledName": "$s3Nei18BusStationProviderC15observeStations7Combine12AnyPublisherVySayAC4DataVGs5NeverOGyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Data",
+            "printedName": "Data",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "name",
+                "printedName": "name",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei18BusStationProviderC4DataV4nameSSvp",
+                "mangledName": "$s3Nei18BusStationProviderC4DataV4nameSSvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei18BusStationProviderC4DataV4nameSSvg",
+                    "mangledName": "$s3Nei18BusStationProviderC4DataV4nameSSvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "id",
+                "printedName": "id",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei18BusStationProviderC4DataV2idSSvp",
+                "mangledName": "$s3Nei18BusStationProviderC4DataV2idSSvp",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei18BusStationProviderC4DataV2idSSvg",
+                    "mangledName": "$s3Nei18BusStationProviderC4DataV2idSSvg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:3Nei18BusStationProviderC4DataV",
+            "mangledName": "$s3Nei18BusStationProviderC4DataV",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3Nei18BusStationProviderC",
+        "mangledName": "$s3Nei18BusStationProviderC",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Logger",
+        "printedName": "Logger",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(transportationManager:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Logger",
+                "printedName": "Nei.Logger",
+                "usr": "s:3Nei6LoggerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransportationManager",
+                "printedName": "Nei.TransportationManager",
+                "usr": "s:3Nei21TransportationManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3Nei6LoggerC21transportationManagerAcA014TransportationD0C_tcfc",
+            "mangledName": "$s3Nei6LoggerC21transportationManagerAcA014TransportationD0C_tcfc",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "writeEventLog",
+            "printedName": "writeEventLog(eventLog:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei6LoggerC13writeEventLog05eventE0ySDySSypSgGSg_tF",
+            "mangledName": "$s3Nei6LoggerC13writeEventLog05eventE0ySDySSypSgGSg_tF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "observeLog",
+            "printedName": "observeLog()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Swift.String, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei6LoggerC10observeLog7Combine12AnyPublisherVySSs5NeverOGyF",
+            "mangledName": "$s3Nei6LoggerC10observeLog7Combine12AnyPublisherVySSs5NeverOGyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLogFile",
+            "printedName": "getLogFile()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3Nei6LoggerC10getLogFile10Foundation3URLVyF",
+            "mangledName": "$s3Nei6LoggerC10getLogFile10Foundation3URLVyF",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3Nei6LoggerC",
+        "mangledName": "$s3Nei6LoggerC",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4176,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4181,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "FloatLiteral",
+      "offset": 4221,
+      "length": 3,
+      "value": "9.0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4276,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4324,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "FloatLiteral",
+      "offset": 4367,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4373,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4419,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/BoardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4478,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 659,
+      "length": 39,
+      "value": "\"com.neibus.bus.transportation_manager\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6879,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8310,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8371,
+      "length": 11,
+      "value": "\"대기중\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8407,
+      "length": 18,
+      "value": "\"탑승 확인중\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8451,
+      "length": 21,
+      "value": "\"탑승시작(TP001)\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8497,
+      "length": 18,
+      "value": "\"탑승중(TP002)\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8541,
+      "length": 22,
+      "value": "\"하차 완료(TP003)\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8586,
+      "length": 15,
+      "value": "\"탑승 실패\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8626,
+      "length": 15,
+      "value": "\"탑승 취소\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8673,
+      "length": 35,
+      "value": "\"탑승 확인 최대시간 경과\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8740,
+      "length": 35,
+      "value": "\"탑승 가능 최대시간 경과\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8371,
+      "length": 11,
+      "value": "\"대기중\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8407,
+      "length": 18,
+      "value": "\"탑승 확인중\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8451,
+      "length": 21,
+      "value": "\"탑승시작(TP001)\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8497,
+      "length": 18,
+      "value": "\"탑승중(TP002)\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8541,
+      "length": 22,
+      "value": "\"하차 완료(TP003)\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8586,
+      "length": 15,
+      "value": "\"탑승 실패\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8626,
+      "length": 15,
+      "value": "\"탑승 취소\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8673,
+      "length": 35,
+      "value": "\"탑승 확인 최대시간 경과\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8740,
+      "length": 35,
+      "value": "\"탑승 가능 최대시간 경과\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10363,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 61,
+      "length": 6,
+      "value": "\"post\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 138,
+      "length": 10,
+      "value": "\"latitude\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 180,
+      "length": 11,
+      "value": "\"longitude\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 227,
+      "length": 14,
+      "value": "\"cos_latitude\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 14,
+      "value": "\"sin_latitude\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 15,
+      "value": "\"cos_longitude\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 15,
+      "value": "\"sin_longitude\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 12,
+      "value": "\"station_nm\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 470,
+      "length": 11,
+      "value": "\"mobile_no\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 513,
+      "length": 11,
+      "value": "\"direction\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 12,
+      "value": "\"station_id\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 602,
+      "length": 14,
+      "value": "\"station_city\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 656,
+      "length": 18,
+      "value": "\"partial_distance\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "IntegerLiteral",
+      "offset": 750,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
+      "kind": "IntegerLiteral",
+      "offset": 791,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Notification\/NotificationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2812,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Notification\/NotificationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2877,
+      "length": 9,
+      "value": "\"doStart\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Notification\/NotificationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2948,
+      "length": 13,
+      "value": "\"cancelStart\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TokenEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/BackgroundTask\/BackgroundTaskManager.swift",
+      "kind": "StringLiteral",
+      "offset": 143,
+      "length": 36,
+      "value": "\"com.neibus.test-bus.motion.refresh\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3291,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3333,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3427,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3432,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "FloatLiteral",
+      "offset": 3482,
+      "length": 4,
+      "value": "11.0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3558,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3632,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/UnboardingEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3637,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/BusStation\/BusStationProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 2350,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/BusStation\/BusStationProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2354,
+      "length": 4,
+      "value": "6371"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 19,
+      "value": "\"com.neibus.logger\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 24,
+      "value": "\"transportation_log.txt\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Logger\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5162,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Logger\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5167,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Logger\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5217,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Logger\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5222,
+      "length": 1,
+      "value": "1"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+framework module Nei {
+  header "Nei-Swift.h"
+  requires objc
+}

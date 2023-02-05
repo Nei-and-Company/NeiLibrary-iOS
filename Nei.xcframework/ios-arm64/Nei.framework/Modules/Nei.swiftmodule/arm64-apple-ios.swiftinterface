@@ -1,0 +1,162 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Nei
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BackgroundTasks
+import Combine
+import CoreLocation
+import CoreMotion
+import Foundation
+import SQLite3
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers public class BoardingEvaluator {
+  public func setSettings(_ settings: Nei.BoardingEvaluator.Settings)
+  @objc deinit
+}
+extension Nei.BoardingEvaluator {
+  public struct Settings {
+    public let locationWindowSize: Foundation.TimeInterval
+    public let speedThreshold: Swift.Double
+    public let speedLocationInterval: Foundation.TimeInterval
+    public let minimumSpeedSatisfyCount: Swift.Int
+    public let distanceThreshold: Swift.Double
+    public let nearStationThreshold: Swift.Int
+    public let nearStationLocationInterval: Foundation.TimeInterval
+    public init(locationWindowSize: Foundation.TimeInterval = 60 * 5, speedThreshold: Swift.Double = 9.0, speedLocationInterval: Foundation.TimeInterval = 10, minimumSpeedSatisfyCount: Swift.Int = 3, distanceThreshold: Swift.Double = 1.5 * 1000, nearStationThreshold: Swift.Int = 3, nearStationLocationInterval: Foundation.TimeInterval = 10)
+  }
+}
+public enum BoardingCondition : Swift.String {
+  case motion
+  case speed
+  case distance
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class TransportationManager {
+  public static let shared: Nei.TransportationManager
+  final public let locationManager: Nei.LocationManager
+  final public let motionManager: Nei.MotionManager
+  final public let busStationProvider: Nei.BusStationProvider
+  public var boardingEvaluator: Nei.BoardingEvaluator {
+    get
+    set
+  }
+  public func setSettings(_ settings: Nei.TransportationManager.Settings)
+  public func enter() -> Swift.Bool
+  public func exit() -> Swift.Bool
+  public func cancel() -> Swift.Bool
+  public func observeState() -> Combine.AnyPublisher<Nei.TransportationManager.StateData, Swift.Never>
+  public func getStateData() -> Nei.TransportationManager.StateData
+  @objc deinit
+}
+extension Nei.TransportationManager {
+  public struct StateData : Swift.Equatable {
+    public var state: Nei.TransportationManager.State
+    public var enterTrigger: Nei.TransportationManager.EnterTrigger?
+    public var boardingCondition: Nei.BoardingCondition?
+    public var unboardingCondition: Nei.UnboardingCondition?
+    public var tokens: Swift.Int
+    public static func == (a: Nei.TransportationManager.StateData, b: Nei.TransportationManager.StateData) -> Swift.Bool
+  }
+  public enum State : Swift.String {
+    case idle
+    case checking
+    case beginning
+    case boarding
+    case unboarded
+    case failed
+    case canceled
+    case checkingTimeout
+    case boardingTimeout
+    public var boarding: Swift.Bool {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum EnterTrigger : Swift.String {
+    case manual
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Nei.TransportationManager.StateData : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Nei.TransportationManager {
+  public struct Settings {
+    public let enableUnboardingCondition: Swift.Bool
+    public let checkingTimeout: Foundation.TimeInterval?
+    public let boardingTimeout: Foundation.TimeInterval?
+    public init(enableUnboardingCondition: Swift.Bool = true, checkingTimeout: Foundation.TimeInterval? = nil, boardingTimeout: Foundation.TimeInterval? = nil)
+  }
+}
+@_hasMissingDesignatedInitializers public class MotionManager {
+  public func observeMotion() -> Combine.AnyPublisher<CoreMotion.CMMotionActivity, Swift.Never>
+  public func getMotion() -> CoreMotion.CMMotionActivity?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LocationManager : ObjectiveC.NSObject {
+  public func observeLocation() -> Combine.AnyPublisher<CoreLocation.CLLocation, Swift.Never>
+  public func getLocation() -> CoreLocation.CLLocation?
+  @objc deinit
+}
+extension Nei.LocationManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+}
+public enum UnboardingCondition {
+  case manual
+  case walking
+  case stationary
+  case lackOfLocation
+  public static func == (a: Nei.UnboardingCondition, b: Nei.UnboardingCondition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BusStationProvider {
+  public func findNearStations(location: CoreLocation.CLLocation) -> [Nei.BusStationProvider.Data]?
+  public func observeStations() -> Combine.AnyPublisher<[Nei.BusStationProvider.Data], Swift.Never>
+  @objc deinit
+}
+extension Nei.BusStationProvider {
+  public struct Data {
+    public let name: Swift.String
+    public let id: Swift.String
+  }
+}
+public class Logger {
+  public init(transportationManager: Nei.TransportationManager)
+  public func writeEventLog(eventLog: [Swift.String : Any?]?)
+  public func observeLog() -> Combine.AnyPublisher<Swift.String, Swift.Never>
+  public func getLogFile() -> Foundation.URL
+  @objc deinit
+}
+extension Nei.BoardingCondition : Swift.Equatable {}
+extension Nei.BoardingCondition : Swift.Hashable {}
+extension Nei.BoardingCondition : Swift.RawRepresentable {}
+extension Nei.TransportationManager.State : Swift.Equatable {}
+extension Nei.TransportationManager.State : Swift.Hashable {}
+extension Nei.TransportationManager.State : Swift.RawRepresentable {}
+extension Nei.TransportationManager.EnterTrigger : Swift.Equatable {}
+extension Nei.TransportationManager.EnterTrigger : Swift.Hashable {}
+extension Nei.TransportationManager.EnterTrigger : Swift.RawRepresentable {}
+extension Nei.UnboardingCondition : Swift.Equatable {}
+extension Nei.UnboardingCondition : Swift.Hashable {}
