@@ -2,19 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "NeiLibrary",
+    name: "Nei",
     platforms: [
         .macOS(.v10_14), .iOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "NeiLibrary",
-            targets: ["NeiLibrary"])
+            name: "Nei",
+            targets: ["Nei"])
     ],
     targets: [
         .binaryTarget(
-            name: "NeiLibrary",
+            name: "Nei",
             path: "Nei.xcframework"
         )
     ]
