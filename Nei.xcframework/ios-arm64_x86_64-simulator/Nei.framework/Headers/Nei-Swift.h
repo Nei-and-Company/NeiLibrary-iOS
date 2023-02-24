@@ -255,6 +255,44 @@ using UInt = size_t;
 #if defined(__OBJC__)
 
 
+SWIFT_CLASS("_TtCV3Nei6BisApi17AllBusArrivalInfo")
+@interface AllBusArrivalInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSXMLParser;
+@class NSString;
+
+@interface AllBusArrivalInfo (SWIFT_EXTENSION(Nei)) <NSXMLParserDelegate>
+- (void)parser:(NSXMLParser * _Nonnull)parser didStartElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName attributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributeDict;
+- (void)parser:(NSXMLParser * _Nonnull)parser didEndElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName;
+- (void)parser:(NSXMLParser * _Nonnull)parser foundCharacters:(NSString * _Nonnull)string;
+- (void)parserDidEndDocument:(NSXMLParser * _Nonnull)parser;
+- (void)parser:(NSXMLParser * _Nonnull)parser parseErrorOccurred:(NSError * _Nonnull)parseError;
+- (void)parser:(NSXMLParser * _Nonnull)parser validationErrorOccurred:(NSError * _Nonnull)validationError;
+@end
+
+
+
+SWIFT_CLASS("_TtCV3Nei6BisApi15BusLocationInfo")
+@interface BusLocationInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface BusLocationInfo (SWIFT_EXTENSION(Nei)) <NSXMLParserDelegate>
+- (void)parser:(NSXMLParser * _Nonnull)parser didStartElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName attributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributeDict;
+- (void)parser:(NSXMLParser * _Nonnull)parser didEndElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName;
+- (void)parser:(NSXMLParser * _Nonnull)parser foundCharacters:(NSString * _Nonnull)string;
+- (void)parserDidEndDocument:(NSXMLParser * _Nonnull)parser;
+- (void)parser:(NSXMLParser * _Nonnull)parser parseErrorOccurred:(NSError * _Nonnull)parseError;
+- (void)parser:(NSXMLParser * _Nonnull)parser validationErrorOccurred:(NSError * _Nonnull)validationError;
+@end
+
+
+
 SWIFT_CLASS("_TtC3Nei15LocationManager")
 @interface LocationManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -268,6 +306,7 @@ SWIFT_CLASS("_TtC3Nei15LocationManager")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
+
 
 #endif
 #if defined(__cplusplus)
@@ -534,6 +573,44 @@ using UInt = size_t;
 #if defined(__OBJC__)
 
 
+SWIFT_CLASS("_TtCV3Nei6BisApi17AllBusArrivalInfo")
+@interface AllBusArrivalInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSXMLParser;
+@class NSString;
+
+@interface AllBusArrivalInfo (SWIFT_EXTENSION(Nei)) <NSXMLParserDelegate>
+- (void)parser:(NSXMLParser * _Nonnull)parser didStartElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName attributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributeDict;
+- (void)parser:(NSXMLParser * _Nonnull)parser didEndElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName;
+- (void)parser:(NSXMLParser * _Nonnull)parser foundCharacters:(NSString * _Nonnull)string;
+- (void)parserDidEndDocument:(NSXMLParser * _Nonnull)parser;
+- (void)parser:(NSXMLParser * _Nonnull)parser parseErrorOccurred:(NSError * _Nonnull)parseError;
+- (void)parser:(NSXMLParser * _Nonnull)parser validationErrorOccurred:(NSError * _Nonnull)validationError;
+@end
+
+
+
+SWIFT_CLASS("_TtCV3Nei6BisApi15BusLocationInfo")
+@interface BusLocationInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface BusLocationInfo (SWIFT_EXTENSION(Nei)) <NSXMLParserDelegate>
+- (void)parser:(NSXMLParser * _Nonnull)parser didStartElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName attributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributeDict;
+- (void)parser:(NSXMLParser * _Nonnull)parser didEndElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName;
+- (void)parser:(NSXMLParser * _Nonnull)parser foundCharacters:(NSString * _Nonnull)string;
+- (void)parserDidEndDocument:(NSXMLParser * _Nonnull)parser;
+- (void)parser:(NSXMLParser * _Nonnull)parser parseErrorOccurred:(NSError * _Nonnull)parseError;
+- (void)parser:(NSXMLParser * _Nonnull)parser validationErrorOccurred:(NSError * _Nonnull)validationError;
+@end
+
+
+
 SWIFT_CLASS("_TtC3Nei15LocationManager")
 @interface LocationManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -547,6 +624,7 @@ SWIFT_CLASS("_TtC3Nei15LocationManager")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
+
 
 #endif
 #if defined(__cplusplus)

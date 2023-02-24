@@ -2706,6 +2706,407 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NaverApi",
+        "printedName": "NaverApi",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "NaverApiError",
+            "printedName": "NaverApiError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "urlError",
+                "printedName": "urlError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.NaverApi.NaverApiError.Type) -> Nei.NaverApi.NaverApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NaverApiError",
+                        "printedName": "Nei.NaverApi.NaverApiError",
+                        "usr": "s:3Nei8NaverApiV0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.NaverApi.NaverApiError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NaverApiError",
+                            "printedName": "Nei.NaverApi.NaverApiError",
+                            "usr": "s:3Nei8NaverApiV0bC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei8NaverApiV0bC5ErrorO03urlD0yA2EmF",
+                "mangledName": "$s3Nei8NaverApiV0bC5ErrorO03urlD0yA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NaverApiError",
+                    "printedName": "Nei.NaverApi.NaverApiError",
+                    "usr": "s:3Nei8NaverApiV0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NaverApiError",
+                    "printedName": "Nei.NaverApi.NaverApiError",
+                    "usr": "s:3Nei8NaverApiV0bC5ErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei8NaverApiV0bC5ErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s3Nei8NaverApiV0bC5ErrorO2eeoiySbAE_AEtFZ",
+                "moduleName": "Nei",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei8NaverApiV0bC5ErrorO9hashValueSivp",
+                "mangledName": "$s3Nei8NaverApiV0bC5ErrorO9hashValueSivp",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei8NaverApiV0bC5ErrorO9hashValueSivg",
+                    "mangledName": "$s3Nei8NaverApiV0bC5ErrorO9hashValueSivg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei8NaverApiV0bC5ErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s3Nei8NaverApiV0bC5ErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "Nei",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:3Nei8NaverApiV0bC5ErrorO",
+            "mangledName": "$s3Nei8NaverApiV0bC5ErrorO",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ReverseGeocode",
+            "printedName": "ReverseGeocode",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(latitude:longitude:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReverseGeocode",
+                    "printedName": "Nei.NaverApi.ReverseGeocode",
+                    "usr": "s:3Nei8NaverApiV14ReverseGeocodeC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei8NaverApiV14ReverseGeocodeC8latitude9longitudeAESd_Sdtcfc",
+                "mangledName": "$s3Nei8NaverApiV14ReverseGeocodeC8latitude9longitudeAESd_Sdtcfc",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "request",
+                "printedName": "request()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<Swift.String?, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei8NaverApiV14ReverseGeocodeC7request7Combine12AnyPublisherVySSSgs5Error_pGyF",
+                "mangledName": "$s3Nei8NaverApiV14ReverseGeocodeC7request7Combine12AnyPublisherVySSSgs5Error_pGyF",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReverseGeocode",
+                    "printedName": "Nei.NaverApi.ReverseGeocode",
+                    "usr": "s:3Nei8NaverApiV14ReverseGeocodeC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei8NaverApiV14ReverseGeocodeCAEycfc",
+                "mangledName": "$s3Nei8NaverApiV14ReverseGeocodeCAEycfc",
+                "moduleName": "Nei",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:3Nei8NaverApiV14ReverseGeocodeC",
+            "mangledName": "$s3Nei8NaverApiV14ReverseGeocodeC",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "superclassUsr": "c:objc(cs)NSObject",
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:3Nei8NaverApiV",
+        "mangledName": "$s3Nei8NaverApiV",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Nei"
       },
       {
@@ -2868,6 +3269,20 @@
         "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "Nei"
       },
@@ -3870,6 +4285,3283 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "Nei"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BisApi",
+        "printedName": "BisApi",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "BisApiError",
+            "printedName": "BisApiError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "urlError",
+                "printedName": "urlError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.BisApi.BisApiError.Type) -> Nei.BisApi.BisApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BisApiError",
+                        "printedName": "Nei.BisApi.BisApiError",
+                        "usr": "s:3Nei6BisApiV0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.BisApi.BisApiError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BisApiError",
+                            "printedName": "Nei.BisApi.BisApiError",
+                            "usr": "s:3Nei6BisApiV0bC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei6BisApiV0bC5ErrorO03urlD0yA2EmF",
+                "mangledName": "$s3Nei6BisApiV0bC5ErrorO03urlD0yA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Var",
+                "name": "xmlParserError",
+                "printedName": "xmlParserError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Nei.BisApi.BisApiError.Type) -> Nei.BisApi.BisApiError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BisApiError",
+                        "printedName": "Nei.BisApi.BisApiError",
+                        "usr": "s:3Nei6BisApiV0bC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Nei.BisApi.BisApiError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BisApiError",
+                            "printedName": "Nei.BisApi.BisApiError",
+                            "usr": "s:3Nei6BisApiV0bC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:3Nei6BisApiV0bC5ErrorO09xmlParserD0yA2EmF",
+                "mangledName": "$s3Nei6BisApiV0bC5ErrorO09xmlParserD0yA2EmF",
+                "moduleName": "Nei"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BisApiError",
+                    "printedName": "Nei.BisApi.BisApiError",
+                    "usr": "s:3Nei6BisApiV0bC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BisApiError",
+                    "printedName": "Nei.BisApi.BisApiError",
+                    "usr": "s:3Nei6BisApiV0bC5ErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV0bC5ErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s3Nei6BisApiV0bC5ErrorO2eeoiySbAE_AEtFZ",
+                "moduleName": "Nei",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:3Nei6BisApiV0bC5ErrorO9hashValueSivp",
+                "mangledName": "$s3Nei6BisApiV0bC5ErrorO9hashValueSivp",
+                "moduleName": "Nei",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:3Nei6BisApiV0bC5ErrorO9hashValueSivg",
+                    "mangledName": "$s3Nei6BisApiV0bC5ErrorO9hashValueSivg",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV0bC5ErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s3Nei6BisApiV0bC5ErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "Nei",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:3Nei6BisApiV0bC5ErrorO",
+            "mangledName": "$s3Nei6BisApiV0bC5ErrorO",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "AllBusArrivalInfo",
+            "printedName": "AllBusArrivalInfo",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(stopId:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllBusArrivalInfo",
+                    "printedName": "Nei.BisApi.AllBusArrivalInfo",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6stopIdAESi_tcfc",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6stopIdAESi_tcfc",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "request",
+                "printedName": "request()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<[Nei.BisApi.AllBusArrivalInfo.Result], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Nei.BisApi.AllBusArrivalInfo.Result]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Result",
+                            "printedName": "Nei.BisApi.AllBusArrivalInfo.Result",
+                            "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC7request7Combine12AnyPublisherVySayAE6ResultVGs5Error_pGyF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC7request7Combine12AnyPublisherVySayAE6ResultVGs5Error_pGyF",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllBusArrivalInfo",
+                    "printedName": "Nei.BisApi.AllBusArrivalInfo",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoCAEycfc",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoCAEycfc",
+                "moduleName": "Nei",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Result",
+                "printedName": "Result",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "routeId",
+                    "printedName": "routeId",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7routeIdSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "busNo",
+                    "printedName": "busNo",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV5busNoSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "busType",
+                    "printedName": "busType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7busTypeSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "lowType",
+                    "printedName": "lowType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV7lowTypeSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "status",
+                    "printedName": "status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6statusSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "fStopName",
+                    "printedName": "fStopName",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9fStopNameSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "tStopName",
+                    "printedName": "tStopName",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9tStopNameSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "stopId",
+                    "printedName": "stopId",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6stopIdSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "stopName",
+                    "printedName": "stopName",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV8stopNameSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "remainStopCnt",
+                    "printedName": "remainStopCnt",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV13remainStopCntSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "remainTime",
+                    "printedName": "remainTime",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10remainTimeSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "emergencyCd",
+                    "printedName": "emergencyCd",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV11emergencyCdSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "recentPassStopSeq",
+                    "printedName": "recentPassStopSeq",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV17recentPassStopSeqSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "direction",
+                    "printedName": "direction",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV9directionSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(from:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Nei.BisApi.AllBusArrivalInfo.Result",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Decoder",
+                        "printedName": "Swift.Decoder",
+                        "usr": "s:s7DecoderP"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV4fromAGs7Decoder_p_tKcfc",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV4fromAGs7Decoder_p_tKcfc",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "throwing": true,
+                    "init_kind": "Designated"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "encode",
+                    "printedName": "encode(to:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encoder",
+                        "printedName": "Swift.Encoder",
+                        "usr": "s:s7EncoderP"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV6encode2toys7Encoder_p_tKF",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV6encode2toys7Encoder_p_tKF",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "throwing": true,
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV",
+                "moduleName": "Nei",
+                "isFromExtension": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Decodable",
+                    "printedName": "Decodable",
+                    "usr": "s:Se",
+                    "mangledName": "$sSe"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Encodable",
+                    "printedName": "Encodable",
+                    "usr": "s:SE",
+                    "mangledName": "$sSE"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6parser_15didStartElement12namespaceURI13qualifiedName10attributesySo11NSXMLParserC_S2SSgAMSDyS2SGtF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6parser_15didStartElement12namespaceURI13qualifiedName10attributesySo11NSXMLParserC_S2SSgAMSDyS2SGtF",
+                "moduleName": "Nei",
+                "objc_name": "parser:didStartElement:namespaceURI:qualifiedName:attributes:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:didEndElement:namespaceURI:qualifiedName:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6parser_13didEndElement12namespaceURI13qualifiedNameySo11NSXMLParserC_S2SSgALtF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6parser_13didEndElement12namespaceURI13qualifiedNameySo11NSXMLParserC_S2SSgALtF",
+                "moduleName": "Nei",
+                "objc_name": "parser:didEndElement:namespaceURI:qualifiedName:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:foundCharacters:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6parser_15foundCharactersySo11NSXMLParserC_SStF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6parser_15foundCharactersySo11NSXMLParserC_SStF",
+                "moduleName": "Nei",
+                "objc_name": "parser:foundCharacters:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parserDidEndDocument",
+                "printedName": "parserDidEndDocument(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC20parserDidEndDocumentyySo11NSXMLParserCF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC20parserDidEndDocumentyySo11NSXMLParserCF",
+                "moduleName": "Nei",
+                "objc_name": "parserDidEndDocument:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:parseErrorOccurred:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6parser_18parseErrorOccurredySo11NSXMLParserC_s0J0_ptF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6parser_18parseErrorOccurredySo11NSXMLParserC_s0J0_ptF",
+                "moduleName": "Nei",
+                "objc_name": "parser:parseErrorOccurred:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:validationErrorOccurred:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6parser_23validationErrorOccurredySo11NSXMLParserC_s0J0_ptF",
+                "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6parser_23validationErrorOccurredySo11NSXMLParserC_s0J0_ptF",
+                "moduleName": "Nei",
+                "objc_name": "parser:validationErrorOccurred:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC",
+            "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "c:objc(cs)NSObject",
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BusLocationInfo",
+            "printedName": "BusLocationInfo",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(routeId:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BusLocationInfo",
+                    "printedName": "Nei.BisApi.BusLocationInfo",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC7routeIdAESi_tcfc",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC7routeIdAESi_tcfc",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "request",
+                "printedName": "request()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<[Nei.BisApi.BusLocationInfo.Result], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Nei.BisApi.BusLocationInfo.Result]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Result",
+                            "printedName": "Nei.BisApi.BusLocationInfo.Result",
+                            "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC7request7Combine12AnyPublisherVySayAE6ResultVGs5Error_pGyF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC7request7Combine12AnyPublisherVySayAE6ResultVGs5Error_pGyF",
+                "moduleName": "Nei",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BusLocationInfo",
+                    "printedName": "Nei.BisApi.BusLocationInfo",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoCAEycfc",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoCAEycfc",
+                "moduleName": "Nei",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Result",
+                "printedName": "Result",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "busNo",
+                    "printedName": "busNo",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV5busNoSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "busType",
+                    "printedName": "busType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7busTypeSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "lowType",
+                    "printedName": "lowType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV7lowTypeSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "stopId",
+                    "printedName": "stopId",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV6stopIdSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "stopName",
+                    "printedName": "stopName",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8stopNameSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "busAngle",
+                    "printedName": "busAngle",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV8busAngleSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "busX",
+                    "printedName": "busX",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busXSdvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "busY",
+                    "printedName": "busY",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4busYSdvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "emergencyCd",
+                    "printedName": "emergencyCd",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivp",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivg",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivs",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivM",
+                        "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV11emergencyCdSivM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(from:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Nei.BisApi.BusLocationInfo.Result",
+                        "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Decoder",
+                        "printedName": "Swift.Decoder",
+                        "usr": "s:s7DecoderP"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV4fromAGs7Decoder_p_tKcfc",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV4fromAGs7Decoder_p_tKcfc",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "throwing": true,
+                    "init_kind": "Designated"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "encode",
+                    "printedName": "encode(to:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encoder",
+                        "printedName": "Swift.Encoder",
+                        "usr": "s:s7EncoderP"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV6encode2toys7Encoder_p_tKF",
+                    "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV6encode2toys7Encoder_p_tKF",
+                    "moduleName": "Nei",
+                    "implicit": true,
+                    "throwing": true,
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC6ResultV",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6ResultV",
+                "moduleName": "Nei",
+                "isFromExtension": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Decodable",
+                    "printedName": "Decodable",
+                    "usr": "s:Se",
+                    "mangledName": "$sSe"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Encodable",
+                    "printedName": "Encodable",
+                    "usr": "s:SE",
+                    "mangledName": "$sSE"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC6parser_15didStartElement12namespaceURI13qualifiedName10attributesySo11NSXMLParserC_S2SSgAMSDyS2SGtF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6parser_15didStartElement12namespaceURI13qualifiedName10attributesySo11NSXMLParserC_S2SSgAMSDyS2SGtF",
+                "moduleName": "Nei",
+                "objc_name": "parser:didStartElement:namespaceURI:qualifiedName:attributes:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:didEndElement:namespaceURI:qualifiedName:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC6parser_13didEndElement12namespaceURI13qualifiedNameySo11NSXMLParserC_S2SSgALtF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6parser_13didEndElement12namespaceURI13qualifiedNameySo11NSXMLParserC_S2SSgALtF",
+                "moduleName": "Nei",
+                "objc_name": "parser:didEndElement:namespaceURI:qualifiedName:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:foundCharacters:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC6parser_15foundCharactersySo11NSXMLParserC_SStF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6parser_15foundCharactersySo11NSXMLParserC_SStF",
+                "moduleName": "Nei",
+                "objc_name": "parser:foundCharacters:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parserDidEndDocument",
+                "printedName": "parserDidEndDocument(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC20parserDidEndDocumentyySo11NSXMLParserCF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC20parserDidEndDocumentyySo11NSXMLParserCF",
+                "moduleName": "Nei",
+                "objc_name": "parserDidEndDocument:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:parseErrorOccurred:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC6parser_18parseErrorOccurredySo11NSXMLParserC_s0I0_ptF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6parser_18parseErrorOccurredySo11NSXMLParserC_s0I0_ptF",
+                "moduleName": "Nei",
+                "objc_name": "parser:parseErrorOccurred:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "parser",
+                "printedName": "parser(_:validationErrorOccurred:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XMLParser",
+                    "printedName": "Foundation.XMLParser",
+                    "usr": "c:objc(cs)NSXMLParser"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:3Nei6BisApiV15BusLocationInfoC6parser_23validationErrorOccurredySo11NSXMLParserC_s0I0_ptF",
+                "mangledName": "$s3Nei6BisApiV15BusLocationInfoC6parser_23validationErrorOccurredySo11NSXMLParserC_s0I0_ptF",
+                "moduleName": "Nei",
+                "objc_name": "parser:validationErrorOccurred:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:3Nei6BisApiV15BusLocationInfoC",
+            "mangledName": "$s3Nei6BisApiV15BusLocationInfoC",
+            "moduleName": "Nei",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "c:objc(cs)NSObject",
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:3Nei6BisApiV",
+        "mangledName": "$s3Nei6BisApiV",
+        "moduleName": "Nei",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8
@@ -4093,6 +7785,125 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/NaverApi.swift",
+      "kind": "StringLiteral",
+      "offset": 251,
+      "length": 14,
+      "value": "\"Nei.ReverseGeocode\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 70,
+      "length": 17,
+      "value": "\"Nei.AllBusArrivalInfo\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1325,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1362,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1399,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1435,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1470,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1511,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1553,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1589,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1629,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1672,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1711,
+      "length": 4,
+      "value": "2467"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1754,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1795,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1836,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "Dictionary",
+      "offset": 2084,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Entities\/Post.swift",
       "kind": "StringLiteral",
       "offset": 61,
@@ -4224,6 +8035,83 @@
       "offset": 677,
       "length": 2,
       "value": "60"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 70,
+      "length": 15,
+      "value": "\"Nei.BusLocationInfo\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1315,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1352,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1388,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1423,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1463,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1501,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "FloatLiteral",
+      "offset": 1537,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "FloatLiteral",
+      "offset": 1575,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1617,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+BusLocationInfo.swift",
+      "kind": "Dictionary",
+      "offset": 1862,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/BackgroundTask\/BackgroundTaskManager.swift",

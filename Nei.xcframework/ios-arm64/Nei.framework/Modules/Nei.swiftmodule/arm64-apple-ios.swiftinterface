@@ -106,10 +106,90 @@ extension Nei.TransportationManager {
     public init(enableUnboardingCondition: Swift.Bool = true, checkingTimeout: Foundation.TimeInterval? = nil, boardingTimeout: Foundation.TimeInterval? = nil)
   }
 }
+public struct NaverApi {
+  public enum NaverApiError : Swift.Error {
+    case urlError
+    public static func == (a: Nei.NaverApi.NaverApiError, b: Nei.NaverApi.NaverApiError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc public class ReverseGeocode : ObjectiveC.NSObject {
+    public init(latitude: Swift.Double, longitude: Swift.Double)
+    public func request() -> Combine.AnyPublisher<Swift.String?, Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi {
+  @objc public class AllBusArrivalInfo : ObjectiveC.NSObject {
+    public init(stopId: Swift.Int)
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusArrivalInfo.Result], Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.AllBusArrivalInfo {
+  public struct Result : Swift.Codable {
+    public var routeId: Swift.Int
+    public var busNo: Swift.String
+    public var busType: Swift.Int
+    public var lowType: Swift.Int
+    public var status: Swift.Int
+    public var fStopName: Swift.String
+    public var tStopName: Swift.String
+    public var stopId: Swift.Int
+    public var stopName: Swift.String
+    public var remainStopCnt: Swift.Int
+    public var remainTime: Swift.Int
+    public var emergencyCd: Swift.Int
+    public var recentPassStopSeq: Swift.Int
+    public var direction: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.AllBusArrivalInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+}
 @_hasMissingDesignatedInitializers public class MotionManager {
   public func observeMotion() -> Combine.AnyPublisher<CoreMotion.CMMotionActivity, Swift.Never>
   public func getMotion() -> CoreMotion.CMMotionActivity?
   @objc deinit
+}
+extension Nei.BisApi {
+  @objc public class BusLocationInfo : ObjectiveC.NSObject {
+    public init(routeId: Swift.Int)
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusLocationInfo.Result], Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.BusLocationInfo {
+  public struct Result : Swift.Codable {
+    public var busNo: Swift.String
+    public var busType: Swift.Int
+    public var lowType: Swift.Int
+    public var stopId: Swift.Int
+    public var stopName: Swift.String
+    public var busAngle: Swift.Int
+    public var busX: Swift.Double
+    public var busY: Swift.Double
+    public var emergencyCd: Swift.Int
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.BusLocationInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LocationManager : ObjectiveC.NSObject {
   public func observeLocation() -> Combine.AnyPublisher<CoreLocation.CLLocation, Swift.Never>
@@ -149,6 +229,17 @@ public class Logger {
   public func getLogFile() -> Foundation.URL
   @objc deinit
 }
+public struct BisApi {
+  public enum BisApiError : Swift.Error {
+    case urlError
+    case xmlParserError
+    public static func == (a: Nei.BisApi.BisApiError, b: Nei.BisApi.BisApiError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 extension Nei.BoardingCondition : Swift.Equatable {}
 extension Nei.BoardingCondition : Swift.Hashable {}
 extension Nei.BoardingCondition : Swift.RawRepresentable {}
@@ -158,5 +249,9 @@ extension Nei.TransportationManager.State : Swift.RawRepresentable {}
 extension Nei.TransportationManager.EnterTrigger : Swift.Equatable {}
 extension Nei.TransportationManager.EnterTrigger : Swift.Hashable {}
 extension Nei.TransportationManager.EnterTrigger : Swift.RawRepresentable {}
+extension Nei.NaverApi.NaverApiError : Swift.Equatable {}
+extension Nei.NaverApi.NaverApiError : Swift.Hashable {}
 extension Nei.UnboardingCondition : Swift.Equatable {}
 extension Nei.UnboardingCondition : Swift.Hashable {}
+extension Nei.BisApi.BisApiError : Swift.Equatable {}
+extension Nei.BisApi.BisApiError : Swift.Hashable {}
