@@ -7562,6 +7562,13 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Nei"
       }
     ],
     "json_format_version": 8
@@ -7640,147 +7647,147 @@
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6879,
+      "offset": 6846,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8310,
+      "offset": 8277,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8371,
+      "offset": 8338,
       "length": 11,
       "value": "\"대기중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8407,
+      "offset": 8374,
       "length": 18,
       "value": "\"탑승 확인중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8451,
+      "offset": 8418,
       "length": 21,
       "value": "\"탑승시작(TP001)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8497,
+      "offset": 8464,
       "length": 18,
       "value": "\"탑승중(TP002)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8541,
+      "offset": 8508,
       "length": 22,
       "value": "\"하차 완료(TP003)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8586,
+      "offset": 8553,
       "length": 15,
       "value": "\"탑승 실패\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8626,
+      "offset": 8593,
       "length": 15,
       "value": "\"탑승 취소\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8673,
+      "offset": 8640,
       "length": 35,
       "value": "\"탑승 확인 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8740,
+      "offset": 8707,
       "length": 35,
       "value": "\"탑승 가능 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8371,
+      "offset": 8338,
       "length": 11,
       "value": "\"대기중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8407,
+      "offset": 8374,
       "length": 18,
       "value": "\"탑승 확인중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8451,
+      "offset": 8418,
       "length": 21,
       "value": "\"탑승시작(TP001)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8497,
+      "offset": 8464,
       "length": 18,
       "value": "\"탑승중(TP002)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8541,
+      "offset": 8508,
       "length": 22,
       "value": "\"하차 완료(TP003)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8586,
+      "offset": 8553,
       "length": 15,
       "value": "\"탑승 실패\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8626,
+      "offset": 8593,
       "length": 15,
       "value": "\"탑승 취소\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8673,
+      "offset": 8640,
       "length": 35,
       "value": "\"탑승 확인 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8740,
+      "offset": 8707,
       "length": 35,
       "value": "\"탑승 가능 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10363,
+      "offset": 10330,
       "length": 4,
       "value": "true"
     },
@@ -8011,21 +8018,21 @@
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Notification\/NotificationManager.swift",
       "kind": "StringLiteral",
-      "offset": 2812,
+      "offset": 2822,
       "length": 7,
       "value": "\"start\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Notification\/NotificationManager.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 2887,
       "length": 9,
       "value": "\"doStart\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Notification\/NotificationManager.swift",
       "kind": "StringLiteral",
-      "offset": 2948,
+      "offset": 2958,
       "length": 13,
       "value": "\"cancelStart\""
     },
@@ -8179,14 +8186,14 @@
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/BusStation\/BusStationProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 2350,
+      "offset": 2353,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/BusStation\/BusStationProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 2354,
+      "offset": 2357,
       "length": 4,
       "value": "6371"
     },
