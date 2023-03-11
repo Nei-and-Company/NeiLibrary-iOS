@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Nei-Swift.h</key>
 		<data>
-		l9YuXXqntp3bRHqAl/w33PElUHU=
+		0v3QnTeSt5835eBHFIobTUZOSTk=
 		</data>
 		<key>Headers/transportation.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qnlnZiIGB87DSMdLqKzT1orW/AQ=
+		DrJBvhf+JENGVYKAkLusoHRLIkM=
 		</data>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KGRL/bEq7jl9EYoHeD4p3R+HCcY=
+		eiFV5B1v7pQxov76l8VmUFXZGbA=
 		</data>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ye0aL7a1OlwCcz41ewZUxEj2PTw=
+		mEL7iyV7HoYMLFJYwrQArZKsCG0=
 		</data>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ye0aL7a1OlwCcz41ewZUxEj2PTw=
+		mEL7iyV7HoYMLFJYwrQArZKsCG0=
 		</data>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CRPtpRgKQdxaVwuDOg6fz2by3JE=
+		FAMKV4s1++xgaoI3mSMpinc9nHk=
 		</data>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KGRL/bEq7jl9EYoHeD4p3R+HCcY=
+		eiFV5B1v7pQxov76l8VmUFXZGbA=
 		</data>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pIbxFRREqlBATMf6dD7wJ9lZOE4=
+		Yi08XE9onkJ8ACgNqIQjEcVr4qA=
 		</data>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pIbxFRREqlBATMf6dD7wJ9lZOE4=
+		Yi08XE9onkJ8ACgNqIQjEcVr4qA=
 		</data>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bPn6LIuejrlw2QO5f/WAXuLSF7o=
+		rtkg9x2uDkid74yxjZqywQUl2fo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/o7Kar1n4MgY05Jr2DmTdVgaOsZm4rQjelEjE+WroJ4=
+			nG/rQcjMSW2ajtvWqT0uIuNyyLTF0rxYKrJOTXxLEr0=
 			</data>
 		</dict>
 		<key>Headers/transportation.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EmckhpPNEKRfMgjcfPfQTmOg0UIHZz2+k5KpebBvwKo=
+			JfWobeD2Yp3dkXx9oY4Os99UONEwKTAyQBnZ6yNwyrQ=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rqjyx+su0jaxXx/A0nakwH07Hb7pV/gpZeYE/AlfClc=
+			EruZMHv1cvbKYiOZJbEyRvrYvlrBWFKqXiGN8ImGXgk=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rqjyx+su0jaxXx/A0nakwH07Hb7pV/gpZeYE/AlfClc=
+			EruZMHv1cvbKYiOZJbEyRvrYvlrBWFKqXiGN8ImGXgk=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gzS+bsKiE9DcXNCup929IuHFHMzdkk3F3wMXl8z+gtE=
+			gIQSDO3GeInH062rT4NG8kUW5/2blJD6lZ97Fc+En1A=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EmckhpPNEKRfMgjcfPfQTmOg0UIHZz2+k5KpebBvwKo=
+			JfWobeD2Yp3dkXx9oY4Os99UONEwKTAyQBnZ6yNwyrQ=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+o1/wWIs//dzCrgk8ePVWy2xhvAcTClNaLKEmuYM25Q=
+			48VbNP82Hy62AQw0vE1DXsHGmd6/eO/CYY3OQHxvVQU=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+o1/wWIs//dzCrgk8ePVWy2xhvAcTClNaLKEmuYM25Q=
+			48VbNP82Hy62AQw0vE1DXsHGmd6/eO/CYY3OQHxvVQU=
 			</data>
 		</dict>
 		<key>Modules/Nei.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			muQ4zKUv+mcOS00hCK5bidFbX29s3b+tg2xprX8/QNk=
+			Z1w1KBLDpBfik7pVkNaCAHXeQHA+1khZiBJP+cZmOWo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

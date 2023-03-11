@@ -13,6 +13,31 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+extension Nei.BisApi {
+  @objc public class RouteViewInfo : ObjectiveC.NSObject {
+    public init(routeId: Swift.String)
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.RouteViewInfo.Result], Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.RouteViewInfo {
+  public struct Result : Swift.Codable {
+    public var routeId: Swift.String
+    public var stopId: Swift.String
+    public var stopName: Swift.String
+    public var brnStart: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.RouteViewInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+}
 @_hasMissingDesignatedInitializers public class BoardingEvaluator {
   public func setSettings(_ settings: Nei.BoardingEvaluator.Settings)
   @objc deinit
@@ -123,27 +148,20 @@ public struct NaverApi {
 }
 extension Nei.BisApi {
   @objc public class AllBusArrivalInfo : ObjectiveC.NSObject {
-    public init(stopId: Swift.Int)
+    public init(stopId: Swift.String)
     public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusArrivalInfo.Result], Swift.Error>
     @objc deinit
   }
 }
 extension Nei.BisApi.AllBusArrivalInfo {
   public struct Result : Swift.Codable {
-    public var routeId: Swift.Int
     public var busNo: Swift.String
-    public var busType: Swift.Int
-    public var lowType: Swift.Int
-    public var status: Swift.Int
-    public var fStopName: Swift.String
-    public var tStopName: Swift.String
-    public var stopId: Swift.Int
-    public var stopName: Swift.String
-    public var remainStopCnt: Swift.Int
-    public var remainTime: Swift.Int
-    public var emergencyCd: Swift.Int
-    public var recentPassStopSeq: Swift.Int
-    public var direction: Swift.String
+    public var busType: Swift.String
+    public var lowType: Swift.String
+    public var status: Swift.String
+    public var remainStopCnt: Swift.String
+    public var remainTime: Swift.String
+    public var emergencyCd: Swift.String
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
@@ -162,28 +180,108 @@ extension Nei.BisApi.AllBusArrivalInfo : Foundation.XMLParserDelegate {
   @objc deinit
 }
 extension Nei.BisApi {
+  @objc public class BusStopInfo : ObjectiveC.NSObject {
+    public init(stopId: Swift.String)
+    public func request() -> Combine.AnyPublisher<Nei.BisApi.BusStopInfo.Result, Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.BusStopInfo {
+  public struct Result : Swift.Codable {
+    public var stopId: Swift.String
+    public var stopName: Swift.String
+    public var stopLimousine: Swift.String
+    public var stopTour: Swift.String
+    public var stopX: Swift.String
+    public var stopY: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.BusStopInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+}
+extension Nei.BisApi {
   @objc public class BusLocationInfo : ObjectiveC.NSObject {
-    public init(routeId: Swift.Int)
+    public init(routeId: Swift.String)
     public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusLocationInfo.Result], Swift.Error>
     @objc deinit
   }
 }
 extension Nei.BisApi.BusLocationInfo {
   public struct Result : Swift.Codable {
-    public var busNo: Swift.String
-    public var busType: Swift.Int
-    public var lowType: Swift.Int
-    public var stopId: Swift.Int
+    public var routeId: Swift.String
+    public var stopId: Swift.String
     public var stopName: Swift.String
-    public var busAngle: Swift.Int
-    public var busX: Swift.Double
-    public var busY: Swift.Double
-    public var emergencyCd: Swift.Int
+    public var lowType: Swift.String
+    public var busX: Swift.String
+    public var busY: Swift.String
     public func encode(to encoder: Swift.Encoder) throws
     public init(from decoder: Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.BusLocationInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+}
+extension Nei.BisApi {
+  @objc public class RouteBaseInfoDetail : ObjectiveC.NSObject {
+    public init(routeId: Swift.String)
+    public func request() -> Combine.AnyPublisher<Nei.BisApi.RouteBaseInfoDetail.Result, Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.RouteBaseInfoDetail {
+  public struct Result : Swift.Codable {
+    public var routeID: Swift.String
+    public var routeNo: Swift.String
+    public var busType: Swift.String
+    public var travelTime: Swift.String
+    public var interval: Swift.String
+    public var busCompany: Swift.String
+    public var companyTel: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.RouteBaseInfoDetail : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+}
+extension Nei.BisApi {
+  @objc public class BusStopAroundInfo : ObjectiveC.NSObject {
+    public init(latitude: Swift.String, longitude: Swift.String, radius: Swift.String)
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusStopAroundInfo.Result], Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.BusStopAroundInfo {
+  public struct Result : Swift.Codable {
+    public var stopId: Swift.String?
+    public var stopName: Swift.String?
+    public var stopLimousine: Swift.String?
+    public var stopTour: Swift.String?
+    public var stopX: Swift.String?
+    public var stopY: Swift.String?
+    public var stopRemark: Swift.String?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.BusStopAroundInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
@@ -222,6 +320,33 @@ extension Nei.BusStationProvider {
     public let id: Swift.String
   }
 }
+extension Nei.BisApi {
+  @objc public class BusPlateInfo : ObjectiveC.NSObject {
+    public init(routeId: Swift.String)
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusPlateInfo.Result], Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.BusPlateInfo {
+  public struct Result : Swift.Codable {
+    public var routeId: Swift.String
+    public var busNo: Swift.String
+    public var stopId: Swift.String
+    public var stopName: Swift.String
+    public var busX: Swift.String
+    public var busY: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.BusPlateInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+}
 public class Logger {
   public init(transportationManager: Nei.TransportationManager)
   public func writeEventLog(eventLog: [Swift.String : Any?]?)
@@ -239,6 +364,32 @@ public struct BisApi {
       get
     }
   }
+}
+extension Nei.BisApi {
+  @objc public class AllBusInfo : ObjectiveC.NSObject {
+    public init(stopId: Swift.String)
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusInfo.Result], Swift.Error>
+    @objc deinit
+  }
+}
+extension Nei.BisApi.AllBusInfo {
+  public struct Result : Swift.Codable {
+    public var busNo: Swift.String
+    public var busType: Swift.String
+    public var lowType: Swift.String
+    public var status: Swift.String
+    public var emergencyCd: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension Nei.BisApi.AllBusInfo : Foundation.XMLParserDelegate {
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String] = [:])
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
 }
 extension Nei.BoardingCondition : Swift.Equatable {}
 extension Nei.BoardingCondition : Swift.Hashable {}
