@@ -100,6 +100,7 @@ extension Nei.TransportationManager {
     case canceled
     case checkingTimeout
     case boardingTimeout
+    case permissionDenied
     public var boarding: Swift.Bool {
       get
     }
