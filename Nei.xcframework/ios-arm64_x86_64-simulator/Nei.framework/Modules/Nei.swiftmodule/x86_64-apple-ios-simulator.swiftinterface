@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Nei
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import BackgroundTasks
@@ -16,7 +16,7 @@ import _StringProcessing
 extension Nei.BisApi {
   @objc public class RouteViewInfo : ObjectiveC.NSObject {
     public init(routeId: Swift.String)
-    public func request() -> Combine.AnyPublisher<[Nei.BisApi.RouteViewInfo.Result], Swift.Error>
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.RouteViewInfo.Result], any Swift.Error>
     @objc deinit
   }
 }
@@ -26,8 +26,8 @@ extension Nei.BisApi.RouteViewInfo {
     public var stopId: Swift.String
     public var stopName: Swift.String
     public var brnStart: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.RouteViewInfo : Foundation.XMLParserDelegate {
@@ -35,8 +35,8 @@ extension Nei.BisApi.RouteViewInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 @_hasMissingDesignatedInitializers public class BoardingEvaluator {
   public func setSettings(_ settings: Nei.BoardingEvaluator.Settings)
@@ -66,7 +66,10 @@ public enum BoardingCondition : Swift.String {
 }
 @_hasMissingDesignatedInitializers public class TransportationManager {
   public static let shared: Nei.TransportationManager
-  final public let locationManager: Nei.LocationManager
+  public var locationManager: Nei.LocationManager {
+    get
+    set
+  }
   final public let motionManager: Nei.MotionManager
   final public let busStationProvider: Nei.BusStationProvider
   public var boardingEvaluator: Nei.BoardingEvaluator {
@@ -129,7 +132,8 @@ extension Nei.TransportationManager {
     public let enableUnboardingCondition: Swift.Bool
     public let checkingTimeout: Foundation.TimeInterval?
     public let boardingTimeout: Foundation.TimeInterval?
-    public init(enableUnboardingCondition: Swift.Bool = true, checkingTimeout: Foundation.TimeInterval? = nil, boardingTimeout: Foundation.TimeInterval? = nil)
+    public let allowsBackgroundLocationUpdates: Swift.Bool
+    public init(enableUnboardingCondition: Swift.Bool = true, checkingTimeout: Foundation.TimeInterval? = nil, boardingTimeout: Foundation.TimeInterval? = nil, allowsBackgroundLocationUpdates: Swift.Bool = true)
   }
 }
 public struct NaverApi {
@@ -143,19 +147,20 @@ public struct NaverApi {
   }
   @objc public class ReverseGeocode : ObjectiveC.NSObject {
     public init(latitude: Swift.Double, longitude: Swift.Double)
-    public func request() -> Combine.AnyPublisher<Swift.String?, Swift.Error>
+    public func request() -> Combine.AnyPublisher<Swift.String?, any Swift.Error>
     @objc deinit
   }
 }
 extension Nei.BisApi {
   @objc public class AllBusArrivalInfo : ObjectiveC.NSObject {
     public init(stopId: Swift.String)
-    public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusArrivalInfo.Result], Swift.Error>
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusArrivalInfo.Result], any Swift.Error>
     @objc deinit
   }
 }
 extension Nei.BisApi.AllBusArrivalInfo {
   public struct Result : Swift.Codable {
+    public var stopId: Swift.String
     public var busNo: Swift.String
     public var busType: Swift.String
     public var lowType: Swift.String
@@ -163,8 +168,8 @@ extension Nei.BisApi.AllBusArrivalInfo {
     public var remainStopCnt: Swift.String
     public var remainTime: Swift.String
     public var emergencyCd: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.AllBusArrivalInfo : Foundation.XMLParserDelegate {
@@ -172,8 +177,8 @@ extension Nei.BisApi.AllBusArrivalInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 @_hasMissingDesignatedInitializers public class MotionManager {
   public func observeMotion() -> Combine.AnyPublisher<CoreMotion.CMMotionActivity, Swift.Never>
@@ -183,7 +188,7 @@ extension Nei.BisApi.AllBusArrivalInfo : Foundation.XMLParserDelegate {
 extension Nei.BisApi {
   @objc public class BusStopInfo : ObjectiveC.NSObject {
     public init(stopId: Swift.String)
-    public func request() -> Combine.AnyPublisher<Nei.BisApi.BusStopInfo.Result, Swift.Error>
+    public func request() -> Combine.AnyPublisher<Nei.BisApi.BusStopInfo.Result, any Swift.Error>
     @objc deinit
   }
 }
@@ -195,8 +200,8 @@ extension Nei.BisApi.BusStopInfo {
     public var stopTour: Swift.String
     public var stopX: Swift.String
     public var stopY: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.BusStopInfo : Foundation.XMLParserDelegate {
@@ -204,13 +209,13 @@ extension Nei.BisApi.BusStopInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 extension Nei.BisApi {
   @objc public class BusLocationInfo : ObjectiveC.NSObject {
     public init(routeId: Swift.String)
-    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusLocationInfo.Result], Swift.Error>
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusLocationInfo.Result], any Swift.Error>
     @objc deinit
   }
 }
@@ -222,8 +227,8 @@ extension Nei.BisApi.BusLocationInfo {
     public var lowType: Swift.String
     public var busX: Swift.String
     public var busY: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.BusLocationInfo : Foundation.XMLParserDelegate {
@@ -231,13 +236,13 @@ extension Nei.BisApi.BusLocationInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 extension Nei.BisApi {
   @objc public class RouteBaseInfoDetail : ObjectiveC.NSObject {
     public init(routeId: Swift.String)
-    public func request() -> Combine.AnyPublisher<Nei.BisApi.RouteBaseInfoDetail.Result, Swift.Error>
+    public func request() -> Combine.AnyPublisher<Nei.BisApi.RouteBaseInfoDetail.Result, any Swift.Error>
     @objc deinit
   }
 }
@@ -250,8 +255,8 @@ extension Nei.BisApi.RouteBaseInfoDetail {
     public var interval: Swift.String
     public var busCompany: Swift.String
     public var companyTel: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.RouteBaseInfoDetail : Foundation.XMLParserDelegate {
@@ -259,13 +264,13 @@ extension Nei.BisApi.RouteBaseInfoDetail : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 extension Nei.BisApi {
   @objc public class BusStopAroundInfo : ObjectiveC.NSObject {
     public init(latitude: Swift.String, longitude: Swift.String, radius: Swift.String)
-    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusStopAroundInfo.Result], Swift.Error>
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusStopAroundInfo.Result], any Swift.Error>
     @objc deinit
   }
 }
@@ -278,8 +283,8 @@ extension Nei.BisApi.BusStopAroundInfo {
     public var stopX: Swift.String?
     public var stopY: Swift.String?
     public var stopRemark: Swift.String?
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.BusStopAroundInfo : Foundation.XMLParserDelegate {
@@ -287,16 +292,16 @@ extension Nei.BisApi.BusStopAroundInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LocationManager : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class LocationManager : ObjectiveC.NSObject {
   public func observeLocation() -> Combine.AnyPublisher<CoreLocation.CLLocation, Swift.Never>
   public func getLocation() -> CoreLocation.CLLocation?
   @objc deinit
 }
 extension Nei.LocationManager : CoreLocation.CLLocationManagerDelegate {
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
 }
 public enum UnboardingCondition {
@@ -324,7 +329,7 @@ extension Nei.BusStationProvider {
 extension Nei.BisApi {
   @objc public class BusPlateInfo : ObjectiveC.NSObject {
     public init(routeId: Swift.String)
-    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusPlateInfo.Result], Swift.Error>
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.BusPlateInfo.Result], any Swift.Error>
     @objc deinit
   }
 }
@@ -336,8 +341,8 @@ extension Nei.BisApi.BusPlateInfo {
     public var stopName: Swift.String
     public var busX: Swift.String
     public var busY: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.BusPlateInfo : Foundation.XMLParserDelegate {
@@ -345,8 +350,8 @@ extension Nei.BisApi.BusPlateInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 public class Logger {
   public init(transportationManager: Nei.TransportationManager)
@@ -369,7 +374,7 @@ public struct BisApi {
 extension Nei.BisApi {
   @objc public class AllBusInfo : ObjectiveC.NSObject {
     public init(stopId: Swift.String)
-    public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusInfo.Result], Swift.Error>
+    public func request() -> Combine.AnyPublisher<[Nei.BisApi.AllBusInfo.Result], any Swift.Error>
     @objc deinit
   }
 }
@@ -380,8 +385,8 @@ extension Nei.BisApi.AllBusInfo {
     public var lowType: Swift.String
     public var status: Swift.String
     public var emergencyCd: Swift.String
-    public func encode(to encoder: Swift.Encoder) throws
-    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
 }
 extension Nei.BisApi.AllBusInfo : Foundation.XMLParserDelegate {
@@ -389,8 +394,8 @@ extension Nei.BisApi.AllBusInfo : Foundation.XMLParserDelegate {
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc dynamic public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc dynamic public func parserDidEndDocument(_ parser: Foundation.XMLParser)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
-  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
+  @objc dynamic public func parser(_ parser: Foundation.XMLParser, validationErrorOccurred validationError: any Swift.Error)
 }
 extension Nei.BoardingCondition : Swift.Equatable {}
 extension Nei.BoardingCondition : Swift.Hashable {}
