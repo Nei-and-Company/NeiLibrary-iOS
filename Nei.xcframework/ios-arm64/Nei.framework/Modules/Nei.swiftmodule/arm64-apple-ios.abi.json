@@ -738,8 +738,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Nei"
       },
@@ -5714,6 +5714,92 @@
                 "children": [
                   {
                     "kind": "Var",
+                    "name": "busRouteId",
+                    "printedName": "busRouteId",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvp",
+                    "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvp",
+                    "moduleName": "Nei",
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvg",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvg",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Set",
+                        "printedName": "Set()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvs",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvs",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "set"
+                      },
+                      {
+                        "kind": "Accessor",
+                        "name": "Modify",
+                        "printedName": "Modify()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvM",
+                        "mangledName": "$s3Nei6BisApiV17AllBusArrivalInfoC6ResultV10busRouteIdSSvM",
+                        "moduleName": "Nei",
+                        "implicit": true,
+                        "accessorKind": "_modify"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
                     "name": "stopId",
                     "printedName": "stopId",
                     "children": [
@@ -9014,8 +9100,8 @@
                 "children": [
                   {
                     "kind": "Var",
-                    "name": "routeID",
-                    "printedName": "routeID",
+                    "name": "routeId",
+                    "printedName": "routeId",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -9025,8 +9111,8 @@
                       }
                     ],
                     "declKind": "Var",
-                    "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvp",
-                    "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvp",
+                    "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvp",
+                    "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvp",
                     "moduleName": "Nei",
                     "declAttributes": [
                       "HasInitialValue",
@@ -9048,8 +9134,8 @@
                           }
                         ],
                         "declKind": "Accessor",
-                        "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvg",
-                        "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvg",
+                        "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvg",
+                        "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvg",
                         "moduleName": "Nei",
                         "implicit": true,
                         "accessorKind": "get"
@@ -9072,8 +9158,8 @@
                           }
                         ],
                         "declKind": "Accessor",
-                        "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvs",
-                        "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvs",
+                        "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvs",
+                        "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvs",
                         "moduleName": "Nei",
                         "implicit": true,
                         "accessorKind": "set"
@@ -9090,8 +9176,8 @@
                           }
                         ],
                         "declKind": "Accessor",
-                        "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvM",
-                        "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIDSSvM",
+                        "usr": "s:3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvM",
+                        "mangledName": "$s3Nei6BisApiV19RouteBaseInfoDetailC6ResultV7routeIdSSvM",
                         "moduleName": "Nei",
                         "implicit": true,
                         "accessorKind": "_modify"
@@ -13660,420 +13746,413 @@
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 732,
       "length": 39,
       "value": "\"com.neibus.bus.transportation_manager\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1036,
+      "offset": 1031,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1205,
+      "offset": 1135,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1703,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2080,
+      "offset": 1596,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 2114,
+      "offset": 1630,
       "length": 54,
       "value": "\"State should be idle, unboarded or canceled to start\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2189,
+      "offset": 1705,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2573,
+      "offset": 2089,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2937,
+      "offset": 2453,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3708,
+      "offset": 3224,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3888,
+      "offset": 3404,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4612,
+      "offset": 4128,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4879,
+      "offset": 4395,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5506,
+      "offset": 5022,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6057,
+      "offset": 5573,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 6182,
+      "offset": 5698,
       "length": 55,
       "value": "\"State should be idle, unboarded or canceled to finish\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6258,
+      "offset": 5774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6616,
+      "offset": 6132,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 6743,
+      "offset": 6259,
       "length": 55,
       "value": "\"State should be idle, unboarded or canceled to cancel\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6819,
+      "offset": 6335,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6894,
+      "offset": 6410,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7389,
+      "offset": 6905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8299,
+      "offset": 7815,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8820,
+      "offset": 8336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8881,
+      "offset": 8397,
       "length": 11,
       "value": "\"대기중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8917,
+      "offset": 8433,
       "length": 18,
       "value": "\"탑승 확인중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8961,
+      "offset": 8477,
       "length": 21,
       "value": "\"탑승시작(TP001)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9007,
+      "offset": 8523,
       "length": 18,
       "value": "\"탑승중(TP002)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9051,
+      "offset": 8567,
       "length": 22,
       "value": "\"하차 완료(TP003)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9096,
+      "offset": 8612,
       "length": 15,
       "value": "\"탑승 실패\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9136,
+      "offset": 8652,
       "length": 15,
       "value": "\"탑승 취소\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9183,
+      "offset": 8699,
       "length": 35,
       "value": "\"탑승 확인 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9250,
+      "offset": 8766,
       "length": 35,
       "value": "\"탑승 가능 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9318,
+      "offset": 8834,
       "length": 22,
       "value": "\"권한 허용 안됨\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9451,
+      "offset": 8967,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9484,
+      "offset": 9000,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9630,
+      "offset": 9146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9663,
+      "offset": 9179,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8881,
+      "offset": 8397,
       "length": 11,
       "value": "\"대기중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8917,
+      "offset": 8433,
       "length": 18,
       "value": "\"탑승 확인중\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8961,
+      "offset": 8477,
       "length": 21,
       "value": "\"탑승시작(TP001)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9007,
+      "offset": 8523,
       "length": 18,
       "value": "\"탑승중(TP002)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9051,
+      "offset": 8567,
       "length": 22,
       "value": "\"하차 완료(TP003)\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9096,
+      "offset": 8612,
       "length": 15,
       "value": "\"탑승 실패\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9136,
+      "offset": 8652,
       "length": 15,
       "value": "\"탑승 취소\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9183,
+      "offset": 8699,
       "length": 35,
       "value": "\"탑승 확인 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9250,
+      "offset": 8766,
       "length": 35,
       "value": "\"탑승 가능 최대시간 경과\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9318,
+      "offset": 8834,
       "length": 22,
       "value": "\"권한 허용 안됨\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9900,
+      "offset": 9416,
       "length": 27,
       "value": "\"State: \""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 9925,
+      "offset": 9441,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10001,
+      "offset": 9517,
       "length": 33,
       "value": "\"\nEnterTrigger: \""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10033,
+      "offset": 9549,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10127,
+      "offset": 9643,
       "length": 43,
       "value": "\"\nBoardingCondition: \""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10169,
+      "offset": 9685,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10267,
+      "offset": 9783,
       "length": 47,
       "value": "\"\nUnboardingCondition: \""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10313,
+      "offset": 9829,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10348,
+      "offset": 9864,
       "length": 26,
       "value": "\"\nToken count: \""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "StringLiteral",
-      "offset": 10373,
+      "offset": 9889,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10985,
+      "offset": 10451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/Transportation\/TransportationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11143,
+      "offset": 10609,
       "length": 4,
       "value": "true"
     },
@@ -14171,42 +14250,42 @@
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1333,
+      "offset": 1337,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1376,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1411,
+      "offset": 1414,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
+      "offset": 1454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 1494,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1536,
+      "offset": 1533,
       "length": 2,
       "value": "\"\""
     },
@@ -14220,77 +14299,91 @@
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 1622,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1666,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "Dictionary",
-      "offset": 1871,
+      "offset": 1914,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1944,
+      "offset": 1987,
       "length": 24,
       "value": "\"AllBusArrivalInfoTable\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2245,
       "length": 24,
       "value": "\"AllBusArrivalInfoTable\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2504,
+      "length": 9,
+      "value": "\"ROUTEID\""
+    },
+    {
+      "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2563,
       "length": 7,
       "value": "\"BUSNO\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2513,
+      "offset": 2615,
       "length": 9,
       "value": "\"BUSTYPE\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2569,
+      "offset": 2671,
       "length": 9,
       "value": "\"LOWTYPE\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2625,
+      "offset": 2727,
       "length": 8,
       "value": "\"STATUS\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2679,
+      "offset": 2781,
       "length": 15,
       "value": "\"REMAINSTOPCNT\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2747,
+      "offset": 2849,
       "length": 12,
       "value": "\"REMAINTIME\""
     },
     {
       "filePath": "\/Users\/minchullee\/Developer\/neibus\/test-bus\/Library\/API\/BisApi+AllBusArrivalInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2809,
+      "offset": 2911,
       "length": 13,
       "value": "\"EMERGENCYCD\""
     },

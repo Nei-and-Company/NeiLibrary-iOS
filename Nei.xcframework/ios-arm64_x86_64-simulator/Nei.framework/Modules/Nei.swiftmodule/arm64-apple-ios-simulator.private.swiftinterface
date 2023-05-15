@@ -160,6 +160,7 @@ extension Nei.BisApi {
 }
 extension Nei.BisApi.AllBusArrivalInfo {
   public struct Result : Swift.Codable {
+    public var busRouteId: Swift.String
     public var stopId: Swift.String
     public var busNo: Swift.String
     public var busType: Swift.String
@@ -248,7 +249,7 @@ extension Nei.BisApi {
 }
 extension Nei.BisApi.RouteBaseInfoDetail {
   public struct Result : Swift.Codable {
-    public var routeID: Swift.String
+    public var routeId: Swift.String
     public var routeNo: Swift.String
     public var busType: Swift.String
     public var travelTime: Swift.String
